@@ -1,0 +1,63 @@
+void setup() {
+  
+}
+// three types of logic
+void loop() {
+  //logic 1 - single IF
+  //syntax
+  if(question){
+    //code runs if true
+  }
+  //example - If it is raining outside wear a jacket
+  if(rain == true){     // ==, <, >, =>, or =< - compare to things
+    blyat.putJacketOn();
+  }  
+}
+
+//logic 2 IF/ELSE
+
+//syntax
+if(question){
+  //code that runs if true
+}else{
+  //code that runs if false
+}
+
+if(rain == true){ 
+    blyat.wearJacket(True);
+  }else{       
+    blyat.wearJacket(False);
+  }
+
+
+   //logic 3 IF/ELSEIF/ELSE
+   //syntax - use when questions are "linked"
+  if (question1){
+    //code to run if question1 is true
+  }else if (question2){
+    //code to use if question2 is true
+  }else if (question3){
+    //code to run if question3 is true
+  }else if (question4){
+    //code to use if question4 is true
+  }else{
+    //code to run by default (catch)
+  }
+  //logic 4 nested IFs
+
+  //syntax
+
+if(question1){
+  //code runs if question1 is true
+  if(question2){
+    //code runs only if Q1 and Q2 are true
+    if(question3){
+      //code runs only if Q1, Q2, and Q3 are true 
+      
+    }
+  }else if(question4){
+    //code runs if Q1 and Q4 are true and Q2 and Q3
+  }else{
+    //code runs if Q1 is true and everything else is false
+  }
+}
